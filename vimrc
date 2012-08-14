@@ -67,9 +67,9 @@
    imap <F10> <Esc>:cn<CR>i
 
    "Macros
-   map <F2>   :Printcheader 
-   map <F3>   :Printfheader 
-   map <F4>   :Printhheader 
+   map <F2>   :InsertHeader $CUSTOM_HEADERS_C_SOURCE
+   map <F3>   :InsertHeader $CUSTOM_HEADERS_C_FUNCTION
+   map <F4>   :InsertHeader $CUSTOM_HEADERS_C_HEADER
    map <F5>   ^i/* <C-[>$a */<C-[>
    map <F6>   ^3x$2h3x
 
