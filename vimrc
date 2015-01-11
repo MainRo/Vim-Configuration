@@ -49,11 +49,11 @@
    set autoindent
    set cindent
 
-   "Put 3 spaces when using tabulations
+   "Put 4 spaces when using tabulations
    set et
-   set sw=3
-   set ts=3
-   set sts=3
+   set sw=4
+   set ts=4
+   set sts=4
 
    " Remove trailing whitespaces and ^M chars
 	autocmd FileType c,cpp,h,js,python autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
