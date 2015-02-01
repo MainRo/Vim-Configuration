@@ -55,8 +55,11 @@
    set ts=4
    set sts=4
 
+   " aidl syntax is java
+   au BufRead,BufNewFile *.aidl set filetype=java
+
    " Remove trailing whitespaces and ^M chars
-	autocmd FileType c,cpp,h,js,python autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
+   autocmd FileType c,cpp,h,js,python autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 " }
 
 " Key mapping {
